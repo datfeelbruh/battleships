@@ -1,0 +1,39 @@
+
+plugins {
+    id 'java'
+    id 'application'
+    id 'com.github.ben-manes.versions' version '0.42.0'
+    id 'se.patrikerdes.use-latest-versions' version '0.2.18'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.0-M1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.0-M1'
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.12.0'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+jar {
+    manifest {
+        attributes "Main-Class": "com.gradle.tutorial.testApp"
+    }
+
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
+application {
+    mainClassName = 'com.gradle.tutorial.testApp'
+}
+

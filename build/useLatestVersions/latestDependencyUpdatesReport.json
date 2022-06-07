@@ -1,0 +1,94 @@
+{
+    "current": {
+        "dependencies": [
+            {
+                "group": "com.github.ben-manes.versions",
+                "userReason": null,
+                "version": "0.42.0",
+                "projectUrl": null,
+                "name": "com.github.ben-manes.versions.gradle.plugin"
+            },
+            {
+                "group": "org.apache.commons",
+                "userReason": null,
+                "version": "3.12.0",
+                "projectUrl": "https://commons.apache.org/proper/commons-lang/",
+                "name": "commons-lang3"
+            },
+            {
+                "group": "org.junit.jupiter",
+                "userReason": null,
+                "version": "5.9.0-M1",
+                "projectUrl": "https://junit.org/junit5/",
+                "name": "junit-jupiter-api"
+            },
+            {
+                "group": "org.junit.jupiter",
+                "userReason": null,
+                "version": "5.9.0-M1",
+                "projectUrl": "https://junit.org/junit5/",
+                "name": "junit-jupiter-engine"
+            },
+            {
+                "group": "se.patrikerdes.use-latest-versions",
+                "userReason": null,
+                "version": "0.2.18",
+                "projectUrl": null,
+                "name": "se.patrikerdes.use-latest-versions.gradle.plugin"
+            }
+        ],
+        "count": 5
+    },
+    "gradle": {
+        "current": {
+            "version": "7.4.2",
+            "reason": "",
+            "isUpdateAvailable": true,
+            "isFailure": false
+        },
+        "nightly": {
+            "version": "",
+            "reason": "update check disabled",
+            "isUpdateAvailable": false,
+            "isFailure": false
+        },
+        "enabled": true,
+        "releaseCandidate": {
+            "version": "7.5-rc-1",
+            "reason": "",
+            "isUpdateAvailable": true,
+            "isFailure": false
+        },
+        "running": {
+            "version": "7.4",
+            "reason": "",
+            "isUpdateAvailable": false,
+            "isFailure": false
+        }
+    },
+    "exceeded": {
+        "dependencies": [
+            
+        ],
+        "count": 0
+    },
+    "outdated": {
+        "dependencies": [
+            
+        ],
+        "count": 0
+    },
+    "unresolved": {
+        "dependencies": [
+            
+        ],
+        "count": 0
+    },
+    "undeclared": {
+        "dependencies": [
+            
+        ],
+        "count": 0
+    },
+    "count": 5
+}
